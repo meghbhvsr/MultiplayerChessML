@@ -1,0 +1,45 @@
+# ---------- Dependencies (reinstall with `npm run install:all`) ----------
+node_modules/
+
+# ---------- Build output (recreate with `npm run build`) ----------
+client/dist/
+
+# ---------- Database: your users, passwords and games (created automatically) ----------
+server/chess.db
+server/chess.db-*
+*.db
+*.sqlite
+
+# ---------- Secrets ----------
+.env
+.env.*
+!.env.example
+
+# ---------- Trained model + arena results (large / machine-specific) ----------
+# The exported model is ~45 MB; copy server/models/ to other machines yourself, or use Git LFS.
+server/models/
+server/arena/
+
+# ---------- Machine learning ----------
+# Training data (~1.5 GB, recreate with prepare_data.py) and checkpoints (~45-135 MB each)
+ml/.venv/
+ml/data*/
+ml/checkpoints*/
+*.npz
+*.pt
+*.onnx
+__pycache__/
+*.py[cod]
+
+# ---------- Logs and temp files ----------
+*.log
+npm-debug.log*
+*.tmp
+
+# ---------- Editor / OS clutter ----------
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini

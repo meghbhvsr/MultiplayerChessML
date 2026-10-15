@@ -1,0 +1,21 @@
+{
+  "name": "chess-server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch index.js",
+    "start": "node index.js",
+    "arena": "node scripts/arena.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "better-sqlite3": "^11.7.0",
+    "chess.js": "1.0.0",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "onnxruntime-node": "1.20.1",
+    "stockfish": "18.0.8",
+    "ws": "^8.18.0"
+  }
+}
